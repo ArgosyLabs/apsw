@@ -12,6 +12,9 @@ complete SQLite API into Python.  The `documentation
 the differences between APSW and pysqlite.  APSW supports CPython 2.3
 onwards and CPython 3.1 onwards.
 
+This version of APSW includes an amalgamated copy of `sqleet
+<https://github.com/resilar/sqleet>`__.
+
 Changes
 =======
 
