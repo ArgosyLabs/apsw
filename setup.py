@@ -858,17 +858,22 @@ if "bdist_msi" in sys.argv:
 
     version=".".join([str(v) for v in version])
 
-setup(name="apsw",
+setup(name="apsw-sqleet",
       version=version,
-      description="Another Python SQLite Wrapper",
+      description="Another Python SQLite Wrapper + sqleet backend",
       long_description=\
 """A Python wrapper for the SQLite embedded relational database engine.
 In contrast to other wrappers such as pysqlite it focuses on being
 a minimal layer over SQLite attempting just to translate the
-complete SQLite API into Python.""",
+complete SQLite API into Python.
+
+This packge is provided by a third party and NOT the original package
+creater.  It bundles sqleet in order to provide a clean install with support
+for encrypted databases.
+""",
       author="Roger Binns",
       author_email="rogerb@rogerbinns.com",
-      url="https://github.com/rogerbinns/apsw/",
+      url="https://github.com/ArgosyLabs/apsw-sqleet/",
       classifiers=[
     "Development Status :: 5 - Production/Stable",
     "Intended Audience :: Developers",
